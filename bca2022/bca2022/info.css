@@ -1,0 +1,35 @@
+.logo
+{
+    text-align: center;
+}
+.logoimg
+{
+   border: solid;
+}
+    
+.bca
+{
+    text-align: center;
+}
+
+.company
+{
+    
+    width:266px ;
+    height:183px;
+}
+
+.tr1 
+{
+    background-color:thistle;
+}
+
+.tr4
+{
+    background-color:thistle;
+}
+
+.tr4 td
+{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

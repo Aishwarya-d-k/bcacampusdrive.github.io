@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    
+    <link rel="stylesheet" type="text/css" href="form.css">
+   
+</head>
+<body>
+    <script>
+        function validateForm()
+    {
+        var fn=document.forms["regform"]["firstname"].value;
+        var ln=document.forms["regform"]["lastname"].value;
+        var ctry=document.forms["regform"]["country"];
+
+        if(fn==null||fn=="")
+        {
+            alert("Firstname cannot be BLANK");
+            return false;
+         }
+         else  if(ln==null||ln=="")
+         {
+             alert("lastname cannot be BLANK");
+             return false;
+         }
+        
+         
+         else if(ctry.selectedIndex==0)
+         {
+            alert("Enter your country")
+             return false;  
+         }
+       }
+    </script>
+    <h1>Application Form</h1>
+    <div>
+        <form name="regform" method:"post" onsubmit="validateForm()">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Enter First Name">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Enter Last Name">
+            <label for="dob">Birth Date</label><br>
+            <input type="date" id="dob"  placeholder="dd/mm/yy"><br>
+            
+              
+            <td rowspan="2">Gender:
+        
+                <td><input type="radio" name=subject" value="male">Male
+                
+                </tr>
+                
+                <tr>
+                
+                <td><input type="radio" name=subject" value="female" >Female
+                
+                </tr><br>       
+                <tr>
+
+                    <td>Email:
+                        <input type="email" placeholder="myname@example.com">
+                </tr>
+                    
+               <br> <tr>
+
+                    <td>Contact:
+                        <input type="number"  placeholder="(000)000-0000">
+
+                </tr>
+ 
+              <br> <tr> <td>Address:
+                
+                <td><textarea rows="5" cols="50" name="description"> 
+                
+                </textarea></tr>
+                <tr>
+                    <td>State:
+                  <input type="text" name="state">
+                    </tr>
+               
+
+            <label for="country">Country</label>
+            <select name="country" id="country">
+                <option value="INDIA">India</option>
+                <option value="USA">USA</option>
+                <option value="JAPAN">Japan</option>
+                
+            </select>
+
+            <td rowspan="2">Language:
+                    
+                <td><input type="checkbox" name="html">HTML
+                
+                </tr>
+    
+  
+    <tr>
+    
+
+    
+    <td><input type="checkbox" name="python">Python
+    
+    </tr>
+
+    <br><td>Resume:
+        
+        <td><input type="file" name="Resume">
+        
+        </tr>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    Go to:<BR>
+        <a href="homepage.html">HOME</a> <br>
+        <a href="company.html">COMPANY</a> <BR>
+        <a href="info.html">INFO</a> <BR>
+
+</body>
+</html>

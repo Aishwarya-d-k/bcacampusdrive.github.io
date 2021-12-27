@@ -1,0 +1,92 @@
+.first
+{
+  text-align: center;
+  color: rgb(49, 12, 12);
+  font-size: 200%;
+}
+
+.first a{
+    padding: 10px 20px;
+    text-transform:uppercase ;
+    text-decoration:none;
+    color:rgb(73, 7, 20);
+    background: rgb(3, 80, 80);
+    position: relative;
+}
+
+.first a::before
+{
+    content: "JOB OPPORTUNITIES";
+    position: absolute;
+    padding: 10px 20px;
+    top:0%;
+    left: 0%;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgb(245, 245, 245);
+    background: rgb(87, 6, 67);
+    transition: all 0.5s;
+    /* opacity: 0; */
+    transform: rotateX(270deg);
+    transform-origin:top;
+}
+
+.first a:hover::before
+{
+    /* opacity: 1; */
+    transform: rotateX(0deg);
+
+}
+
+
+
+.first a::after
+{
+    content: "JOB OPPORTUNITIES";
+    position: absolute;
+    padding: 10px 20px;
+    top:0%;
+    left: 0%;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgb(247, 235, 235);
+    background: rgb(8, 122, 13);
+    transition: all 0.5s;
+    transform: rotateX(270deg);
+    transform-origin: top;
+    transition-delay: 0.3S;
+}
+
+.first a:hover::after
+{
+
+    transform: rotateX(0deg);
+
+
+}
+
+
+body{
+    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.1)),url('background.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    font-size: 125%;
+}
+
+p 
+ {
+color: rgba(34, 0, 0, 0.822);
+font-size: 130%;
+}
+
+
+.it 
+{
+    color: rgb(43, 3, 3);
+}
+
+.it:hover
+{
+    background: rgb(95, 62, 95);
+    color:black;
+}
